@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* O que é */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16">
-        <p className="max-w-2xl text-balance text-2xl font-medium leading-snug tracking-tight sm:text-3xl">
+        <p className="max-w-4xl text-balance text-2xl font-medium leading-snug tracking-tight sm:text-3xl">
           Quem toca sabe: o mix de fone certo muda tudo. O EarMix tira esse controle da
           mesa e coloca <span className="text-fader">na mão de cada músico</span> — sem
           mexer no som da casa.
