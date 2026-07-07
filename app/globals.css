@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* Paleta do EarMix — o mundo do palco e da mesa de mix. */
+@theme {
+  --color-stage: #0a0a0e; /* fundo: palco escuro */
+  --color-stage-top: #15151d; /* topo do gradiente */
+  --color-surface: #16161f; /* cartões */
+  --color-surface-2: #1e1e2a;
+  --color-border: #2a2a38;
+  --color-ink: #f2f2f7; /* texto */
+  --color-ink-dim: #9a9aa8; /* texto secundário */
+  --color-ink-faint: #6b6b78;
+  --color-fader: #22c55e; /* verde do fader/send */
+  --color-fader-dk: #16a34a;
+  --color-phone: #3b82f6; /* azul do fone */
+  --color-phone-dk: #2563eb;
+  --color-vu-hot: #ff453a; /* vermelho do VU (clip) */
+  --color-vu-warn: #ffd60a; /* amarelo do VU */
+
+  --font-display: var(--font-grotesk);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  font-family: var(--font-display), system-ui, sans-serif;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #1a1a26 0%, transparent 60%),
+    linear-gradient(180deg, var(--color-stage-top) 0%, var(--color-stage) 40%);
+  background-attachment: fixed;
+}
+
+/* VU de LED do hero: cada segmento acende/apaga simulando áudio ao vivo. */
+@keyframes vu-pulse {
+  0%,
+  100% {
+    opacity: 0.16;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.vu-seg {
+  animation: vu-pulse 1.1s ease-in-out infinite;
+}
+
+/* Faixa fina de "brilho" que percorre o topo — sutil, como um sinal passando. */
+@keyframes drift {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vu-seg {
+    animation: none;
+    opacity: 0.85;
+  }
+}
+
+/* Texto corrido das páginas legais. */
+.legal {
+  line-height: 1.7;
+  color: var(--color-ink-dim);
+}
+.legal h2 {
+  color: var(--color-ink);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.legal p {
+  margin-bottom: 1rem;
+}
+.legal ul {
+  margin: 0 0 1rem 1.15rem;
+  list-style: disc;
+}
+.legal li {
+  margin-bottom: 0.4rem;
+}
+.legal a {
+  color: var(--color-phone);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
