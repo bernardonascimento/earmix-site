@@ -66,7 +66,7 @@ export default function Termos() {
 
       <h2>Contato</h2>
       <p>
-        Dúvidas? <a href="mailto:contato@earmix.com.br">contato@earmix.com.br</a>.
+        Dúvidas? <a href="mailto:bernardonasciimento@gmail.com">bernardonasciimento@gmail.com</a>.
       </p>
     </LegalLayout>
   );

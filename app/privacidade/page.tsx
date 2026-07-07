@@ -69,7 +69,7 @@ export default function Privacidade() {
       <h2>Contato</h2>
       <p>
         Dúvidas sobre privacidade? Fale com a gente em{" "}
-        <a href="mailto:contato@earmix.com.br">contato@earmix.com.br</a>.
+        <a href="mailto:bernardonasciimento@gmail.com">bernardonasciimento@gmail.com</a>.
       </p>
     </LegalLayout>
   );
