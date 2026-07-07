@@ -1,5 +1,7 @@
 # EarMix — site
 
+![Landing do EarMix: hero com o mixer animado e a chamada “Seu mix de fone, na palma da mão”](docs/preview.png)
+
 Site institucional do **EarMix**, o app que coloca o mix de retorno (fone/in-ear) de uma
 mesa **Behringer X32 / Midas M32** na palma da mão do músico. Este repositório é só a
 vitrine na web: landing, **Política de Privacidade** e **Termos de Uso** (exigidos pelas
