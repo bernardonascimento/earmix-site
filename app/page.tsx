@@ -43,21 +43,23 @@ const STEPS = [
 export default function Home() {
   return (
     <>
-      <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6">
-        <span className="flex items-center gap-2.5">
-          <Image
-            src="/logo.png"
-            alt=""
-            width={32}
-            height={32}
-            className="h-8 w-auto"
-            priority
-          />
-          <span className="text-xl font-semibold tracking-tight">EarMix</span>
-        </span>
-        <span className="hidden font-mono text-xs uppercase tracking-widest text-ink-faint sm:block">
-          Behringer X32 · Midas M32
-        </span>
+      <header className="sticky top-0 z-50 border-b border-border/60 bg-stage/80 backdrop-blur-md">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+          <span className="flex items-center gap-2.5">
+            <Image
+              src="/logo.png"
+              alt=""
+              width={32}
+              height={32}
+              className="h-8 w-auto"
+              priority
+            />
+            <span className="text-xl font-semibold tracking-tight">EarMix</span>
+          </span>
+          <span className="hidden font-mono text-xs uppercase tracking-widest text-ink-faint sm:block">
+            Behringer X32 · Midas M32
+          </span>
+        </div>
       </header>
 
       {/* Hero */}
