@@ -11,6 +11,9 @@ export function SiteFooter() {
         </Link>
 
         <nav className="flex items-center gap-6 font-mono text-sm text-ink-dim">
+          <Link href="/suporte" className="transition hover:text-ink">
+            Suporte
+          </Link>
           <Link href="/privacidade" className="transition hover:text-ink">
             Privacidade
           </Link>
