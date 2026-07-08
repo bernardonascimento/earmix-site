@@ -97,7 +97,7 @@ export default function Suporte() {
           ))}
         </div>
 
-        <p className="mt-10 max-w-2xl font-mono text-sm leading-relaxed text-ink-faint">
+        <p className="mt-10 font-mono text-sm leading-relaxed text-ink-faint">
           Ainda com dúvida? Escreva para{" "}
           <a href={`mailto:${EMAIL}`} className="text-ink-dim underline transition hover:text-ink">
             {EMAIL}

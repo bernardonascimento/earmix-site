@@ -30,7 +30,7 @@ export function LegalLayout({
         <p className="mt-2 font-mono text-xs uppercase tracking-widest text-ink-faint">
           Atualizado em {updated}
         </p>
-        <div className="legal mt-8 max-w-3xl">{children}</div>
+        <div className="legal mt-8">{children}</div>
       </main>
 
       <SiteFooter />

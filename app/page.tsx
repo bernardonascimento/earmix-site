@@ -136,7 +136,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="mt-10 max-w-xl font-mono text-sm leading-relaxed text-ink-faint">
+        <p className="mt-10 font-mono text-sm leading-relaxed text-ink-faint">
           Comunicação por OSC sobre a rede local (porta 10023). O celular fala
           direto com a mesa — nada passa por servidores, nada sai da sua rede.
         </p>
