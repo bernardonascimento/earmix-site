@@ -44,8 +44,8 @@ export default function Suporte() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-stage/80 backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2.5">
-            <Image src="/logo.png" alt="" width={28} height={28} className="h-7 w-auto" />
-            <span className="text-lg font-semibold tracking-tight">EarMix</span>
+            <Image src="/logo.png" alt="" width={32} height={32} className="h-8 w-auto" />
+            <span className="text-xl font-semibold tracking-tight">EarMix</span>
           </Link>
           <Link href="/" className="font-mono text-sm text-ink-dim transition hover:text-ink">
             ← Voltar
