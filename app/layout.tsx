@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
 import "./globals.css";
+import { WhatsAppFab } from "./components/WhatsAppFab";
 
 export const viewport: Viewport = {
   themeColor: "#0a0a0e",
@@ -86,7 +87,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${grotesk.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-stage text-ink">{children}</body>
+      <body className="min-h-full flex flex-col bg-stage text-ink">
+        {children}
+        <WhatsAppFab />
+      </body>
     </html>
   );
 }
