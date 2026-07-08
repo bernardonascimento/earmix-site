@@ -4,9 +4,11 @@ const SEGMENTS = 14;
 
 const CHANNELS = [
   { name: "Kick", accent: "fader" as const, fader: 72, dur: 1.15, delay: 0 },
-  { name: "Voz", accent: "phone" as const, fader: 58, dur: 1.35, delay: 0.45 },
+  { name: "Snare", accent: "fader" as const, fader: 54, dur: 0.9, delay: 0.5 },
+  { name: "Baixo", accent: "phone" as const, fader: 63, dur: 1.4, delay: 0.2 },
   { name: "Guita", accent: "fader" as const, fader: 48, dur: 0.95, delay: 0.15 },
   { name: "Teclas", accent: "phone" as const, fader: 66, dur: 1.25, delay: 0.6 },
+  { name: "Voz", accent: "phone" as const, fader: 58, dur: 1.35, delay: 0.45 },
   { name: "Click", accent: "fader" as const, fader: 40, dur: 1.05, delay: 0.3 },
 ];
 
@@ -29,12 +31,12 @@ export function StageMixer() {
         </span>
       </div>
 
-      <div className="flex justify-between gap-3">
+      <div className="flex justify-between gap-2 sm:gap-2.5">
         {CHANNELS.map((ch) => (
           <div key={ch.name} className="flex flex-1 flex-col items-center">
-            <div className="flex h-40 items-stretch gap-1.5 sm:h-52">
+            <div className="flex h-52 items-stretch gap-1 sm:h-72 sm:gap-1.5">
               {/* VU meter (LEDs de baixo p/ cima) */}
-              <div className="flex w-2.5 flex-col-reverse gap-[3px]">
+              <div className="flex w-2 flex-col-reverse gap-[3px] sm:w-2.5">
                 {Array.from({ length: SEGMENTS }).map((_, i) => (
                   <span
                     key={i}
@@ -48,7 +50,7 @@ export function StageMixer() {
               </div>
 
               {/* Fader */}
-              <div className="relative w-8 rounded-full bg-surface-2">
+              <div className="relative w-6 rounded-full bg-surface-2 sm:w-8">
                 <div
                   className={`absolute inset-x-0 bottom-0 rounded-full ${
                     ch.accent === "fader"
