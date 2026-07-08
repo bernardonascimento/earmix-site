@@ -79,6 +79,46 @@ export const metadata: Metadata = {
   },
 };
 
+// Dados estruturados (Schema.org) — ajudam o Google a entender a marca e o app.
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "EarMix",
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon.png`,
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "bernardonasciimento@gmail.com",
+        telephone: "+5516992452216",
+        availableLanguage: ["Portuguese"],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "EarMix",
+      inLanguage: "pt-BR",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "EarMix",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "iOS, Android",
+      inLanguage: "pt-BR",
+      url: SITE_URL,
+      description: DESCRIPTION,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "BRL" },
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -88,6 +128,10 @@ export default function RootLayout({
       className={`${grotesk.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-stage text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+        />
         {children}
         <WhatsAppFab />
       </body>
