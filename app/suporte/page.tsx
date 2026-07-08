@@ -58,7 +58,7 @@ export default function Suporte() {
           Estamos por perto
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Suporte</h1>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-dim">
+        <p className="mt-4 text-lg leading-relaxed text-ink-dim">
           Travou em algo, achou um bug ou tem uma ideia? Fala com a gente — respondemos
           o mais rápido possível.
         </p>
@@ -83,7 +83,7 @@ export default function Suporte() {
         <h2 className="mt-14 text-sm font-mono uppercase tracking-[0.2em] text-ink-faint">
           Perguntas frequentes
         </h2>
-        <div className="mt-6 max-w-3xl divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
+        <div className="mt-6 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
           {FAQ.map((item) => (
             <details key={item.q} className="group px-6">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-medium tracking-tight [&::-webkit-details-marker]:hidden">
