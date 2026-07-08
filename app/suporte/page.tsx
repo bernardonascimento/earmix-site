@@ -42,7 +42,7 @@ export default function Suporte() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border/60 bg-stage/80 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2.5">
             <Image src="/logo.png" alt="" width={28} height={28} className="h-7 w-auto" />
             <span className="text-lg font-semibold tracking-tight">EarMix</span>
@@ -53,7 +53,7 @@ export default function Suporte() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-7xl px-6 py-12">
+      <main className="mx-auto w-full max-w-6xl px-6 py-12">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-fader">
           Estamos por perto
         </p>

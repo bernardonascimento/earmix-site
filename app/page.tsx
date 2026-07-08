@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border/60 bg-stage/80 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <span className="flex items-center gap-2.5">
             <Image
               src="/logo.png"
@@ -63,7 +63,7 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 pt-10 pb-20 lg:grid-cols-2 lg:gap-8 lg:pt-16">
+      <section className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-10 pb-20 lg:grid-cols-2 lg:gap-8 lg:pt-16">
         <div>
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-fader">
             Seu retorno, no seu controle
@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* O que é */}
-      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+      <section className="mx-auto w-full max-w-6xl px-6 py-16">
         <p className="max-w-6xl text-balance text-2xl font-medium leading-snug tracking-tight sm:text-3xl">
           Quem toca sabe: o mix de fone certo muda tudo. O EarMix tira esse
           controle da mesa e coloca{" "}
@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* Destaques */}
-      <section className="mx-auto w-full max-w-7xl px-6 py-12">
+      <section className="mx-auto w-full max-w-6xl px-6 py-12">
         <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
           {FEATURES.map((f) => (
             <div key={f.title} className="bg-surface p-7">
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Como funciona */}
-      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+      <section className="mx-auto w-full max-w-6xl px-6 py-16">
         <h2 className="text-sm font-mono uppercase tracking-[0.2em] text-ink-faint">
           Como funciona
         </h2>
