@@ -136,9 +136,12 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="mt-10 font-mono text-sm leading-relaxed text-ink-faint">
+        <p className="mt-16 font-mono text-sm leading-relaxed text-ink-faint">
           Comunicação por OSC sobre a rede local (porta 10023). O celular fala
           direto com a mesa — nada passa por servidores, nada sai da sua rede.
+          O EarMix não grava áudio nem armazena os seus mixes fora do aparelho:
+          o que você ajusta vai direto para a X32/M32 e fica só entre vocês dois,
+          na mesma Wi-Fi.
         </p>
       </section>
 

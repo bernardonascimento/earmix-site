@@ -9,6 +9,7 @@ const CHANNELS = [
   { name: "Guita", accent: "fader" as const, fader: 48, dur: 0.95, delay: 0.15 },
   { name: "Teclas", accent: "phone" as const, fader: 66, dur: 1.25, delay: 0.6 },
   { name: "Voz", accent: "phone" as const, fader: 58, dur: 1.35, delay: 0.45 },
+  { name: "Sax", accent: "fader" as const, fader: 51, dur: 1.1, delay: 0.7 },
   { name: "Click", accent: "fader" as const, fader: 40, dur: 1.05, delay: 0.3 },
 ];
 
@@ -34,7 +35,7 @@ export function StageMixer() {
       <div className="flex justify-between gap-2 sm:gap-2.5">
         {CHANNELS.map((ch) => (
           <div key={ch.name} className="flex flex-1 flex-col items-center">
-            <div className="flex h-52 items-stretch gap-1 sm:h-72 sm:gap-1.5">
+            <div className="flex h-48 items-stretch gap-1 sm:h-64 sm:gap-1.5">
               {/* VU meter (LEDs de baixo p/ cima) */}
               <div className="flex w-2 flex-col-reverse gap-[3px] sm:w-2.5">
                 {Array.from({ length: SEGMENTS }).map((_, i) => (
