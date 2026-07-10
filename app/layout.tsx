@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { WhatsAppFab } from "./components/WhatsAppFab";
+import { Analytics } from "@vercel/analytics/next";
 
 export const viewport: Viewport = {
   themeColor: "#0a0a0e",
@@ -134,6 +135,7 @@ export default function RootLayout({
         />
         {children}
         <WhatsAppFab />
+        <Analytics />
       </body>
     </html>
   );
