@@ -22,7 +22,7 @@ const mono = Space_Mono({
   weight: ["400", "700"],
 });
 
-const SITE_URL = "https://earmix.com.br";
+const SITE_URL = "https://www.earmix.com.br";
 const DESCRIPTION =
   "Controle o seu retorno de palco (fone/in-ear) direto do celular numa mesa Behringer X32 ou Midas M32. Volume, VU em tempo real e presets, na rede Wi-Fi da mesa.";
 

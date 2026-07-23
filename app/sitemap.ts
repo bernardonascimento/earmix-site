@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://earmix.com.br";
+const SITE_URL = "https://www.earmix.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
